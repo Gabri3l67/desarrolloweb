@@ -1,0 +1,89 @@
+body {
+    background-color: #eef1f7; /* Un fondo neutro para resaltar los colores brillantes */
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y limpia */
+}
+
+.container {
+    margin-top: 40px; /* Más espacio en la parte superior para una presentación más clara */
+}
+
+.card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para efecto 3D */
+    transition: transform 0.3s ease-in-out; /* Transición suave para efecto de interacción */
+    border-radius: 15px; /* Bordes muy redondeados para un look moderno */
+    overflow: hidden; /* Esconde cualquier desborde para mantener los bordes limpios */
+    background: linear-gradient(145deg, #ffffff, #f0f3f7); /* Gradiente sutil para textura */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa en hover */
+}
+
+.card-img-top {
+    height: 120px; /* Ajustar automáticamente la altura para mantener la proporción */
+    width: 50%; /* Ajusta el ancho al de la tarjeta, pero no más grande que la imagen original */
+    object-fit: scale-down; /* Asegura que la imagen se ajuste dentro del contenedor sin deformarse */
+}
+.card-img {
+    background-image: url('tu-imagen.jpg');
+    height: 200px; /* Altura fija */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    background-position: center; /* Centra la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el div sin distorsionarse */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+}
+
+
+.card-title {
+    font-size: 20px; /* Tamaño más grande para resaltar */
+    color: #000000; /* Un azul brillante y atractivo */
+    margin-bottom: 10px; /* Espacio extra debajo del título */
+}
+
+.card-text {
+    color: #626567; /* Gris oscuro para contraste suave con el fondo */
+    font-size: 16px; /* Tamaño adecuado para legibilidad */
+}
+
+.btn-primary {
+    color: #fff; /* Texto blanco para mejor contraste */
+    background-image: linear-gradient(to right, #eeff05, #48b1bf); /* Gradiente de azul turquesa a azul más suave */
+    border: none; /* Sin bordes para un look más limpio */
+    border-radius: 30px; /* Bordes muy redondeados */
+    padding: 10px 20px; /* Acolchado adecuado para hacer el botón más grande y fácil de clicar */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidad */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-image: linear-gradient(to right, #048ba8, #2c6975); /* Gradiente oscuro para hover y focus */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra más intensa en hover y focus */
+    transform: translateY(-2px); /* Elevación ligera al pasar el mouse o al hacer focus */
+}
+
+.btn-primary:active {
+    transform: translateY(1px); /* Efecto de 'presionado' al clicar */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Sombra más suave cuando el botón está activo */
+}
+
+
+/* Añadir animaciones sutiles para interactividad */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out forwards; /* Efecto de entrada para cada tarjeta */
+}
+
+

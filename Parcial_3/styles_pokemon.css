@@ -1,0 +1,62 @@
+body {
+    background-color: #f4f4f6; /* Fondo general claro para la página */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+}
+
+.container {
+    max-width: 800px; /* Contenedor principal limitado a una anchura máxima */
+    margin: 50px auto; /* Centra el contenedor en la página */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra sutil para el contenedor */
+    padding: 20px;
+    background: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.card {
+    background: linear-gradient(145deg, #5ad4e6, #8375d3); /* Gradiente que varía según el tipo de Pokémon */
+    color: #ffffff; /* Texto en color blanco para mejor contraste */
+    border: none; /* Sin bordes para un look limpio */
+    border-radius: 10px; /* Bordes redondeados para la tarjeta */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra prominente para la tarjeta */
+    overflow: hidden; /* Esconde cualquier contenido que se desborde */
+}
+
+.card-img-top {
+    height: 200px; /* Altura fija */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    object-fit: contain; /* Asegura que la imagen cubra el área sin deformarse */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el hover */
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse sobre la imagen */
+}
+
+.card-body {
+    padding: 20px; /* Acolchado interno para la tarjeta */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.card-title {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.card-text {
+    font-size: 16px; /* Tamaño de fuente para el texto */
+    line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+}
+
+/* Estilos adicionales para los botones u otros elementos si es necesario */
+.btn-primary {
+    background-color: #5a67d8; /* Color del botón */
+    border-color: #4c51bf;
+    border-radius: 30px; /* Bordes redondeados para el botón */
+    padding: 10px 20px; /* Padding para aumentar el tamaño del botón */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave para el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.btn-primary:hover {
+    background-color: #434190; /* Color del botón al hacer hover */
+}
