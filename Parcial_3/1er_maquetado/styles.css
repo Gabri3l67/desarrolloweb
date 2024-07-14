@@ -1,0 +1,78 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente más moderna y amigable */
+    background: linear-gradient(135deg, #ff7a3c, #e73827); /* Rojo vibrante con gradiente */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #777777, #1f50b9); /* Cian a azul */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para un toque moderno */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* Más estrecho para un aspecto más elegante */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-register label {
+    margin-bottom: 5px;
+    color: #000000; /* Dorado para etiquetas, muy llamativo */
+}
+
+.form-register input,
+.form-register select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #36D1DC; /* Borde cian */
+    border-radius: 8px;
+    background-color: #2C3E50; /* Azul oscuro para campos */
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Transición suave para todos los efectos */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-register input::placeholder,
+.form-register select option {
+    color: #CCCCCC; /* Gris claro para texto de placeholder y opciones */
+}
+
+.form-register input:focus,
+.form-register select:focus {
+    background-color: #34495E; /* Azul más claro cuando se enfoca */
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Sombra dorada */
+}
+
+.date-selectors {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}

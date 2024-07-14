@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro general */
+    color: #e0e0e0; /* Texto en gris claro para mayor legibilidad */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegurar que el footer quede al final */
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+    background-color: #1a73e8; /* Azul Google para el encabezado */
+    color: #ffffff;
+    border-bottom: 3px solid #e2f539; /* Borde verde de Google */
+}
+
+.header-links a, .auth-links a, .top-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff; 
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Product Sans', sans-serif;
+    color: #4e007a; 
+    margin: 20px 0;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 24px;
+    margin-top: 20px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #333333; 
+    color: #ffffff; /* Texto claro para el input */
+    transition: all 0.3s ease;
+}
+
+.search-bar:hover, .search-bar:focus {
+    background-color: #434343; /* Un gris más claro en hover/focus */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0251d1; /* Azul brillante para botones */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #357ae8; /* Azul más oscuro en hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.additional-links a {
+    color: #fb0505; 
+}
+
+footer {
+    background-color: #202124; /* Fondo de pie de página muy oscuro */
+    color: #e0e0e0;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #424245;
+}
+
+.footer-links a {
+    color: #fbbc05; /* Amarillo para enlaces en el pie de página */
+}

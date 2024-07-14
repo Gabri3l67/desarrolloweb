@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Evento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Formulario Evento</h1>
+    </header>
+
+    <div class="form-container">
+        <form>
+            <div class="form-register">
+
+                <!--Formulario nombre-->
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                <!--Parte de correo-->
+                <label for="correo">Correo electrónico: </label>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+
+                <!--Parte de URL-->
+                <label for="url">URL: </label>
+                <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página" required>
+                
+                <!--Parte de Fecha-->
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="fecha" id="fecha">
+
+                <!--Parte de Tiempo-->
+                <label for="tiempo">Tiempo: </label>
+                <input type="time" name="tiempo" id="tiempo">
+
+                <!--Parte de Fecha y hora-->
+                <label for="fecha-hora">Fecha y hora: </label>
+                <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+
+                <!--Parte de Mes-->
+                <label for="mes">Mes: </label>
+                <input type="month" id="mes" name="mes">
+
+                <!--Parte de Semana-->
+                <label for="semana">Semana: </label>
+                <input type="week" id="semana" name="semana">
+
+                <!--Parte de Número-->
+                <label for="numero">Número (min -10, max 10): </label>
+                <input type="number" id="numero" name="numero" min="-10" max="10">
+
+                <!--Parte de Teléfono-->
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+
+                <!--Parte de Término de búsqueda-->
+                <label for="termino">Término de búsqueda: </label>
+                <input type="search" id="termino" name="termino" placeholder="Término de búsqueda">
+
+                <!--Parte de Color favorito-->
+                <label for="color">Color favorito: </label>
+                <input type="color" id="color" name="color" class="color-input">
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
