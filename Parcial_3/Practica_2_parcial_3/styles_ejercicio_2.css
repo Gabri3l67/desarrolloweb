@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradiente de fondo vibrante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; 
+    flex-direction: column; 
+    color: white; /* Texto blanco para contraste */
+}
+
+input, button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparente para un efecto de 'vidrio' */
+    color: #FFFFFF; /* Letras en blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+input:focus, button:hover {
+    border-color: #ffe259; /* Borde amarillo neón al enfocar/hover */
+    background: rgba(255, 255, 255, 0.3); /* Más visibilidad al interaccionar */
+    transform: translateY(-3px); /* Levantamiento sutil al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más profunda en interacción */
+}
+
+button {
+    background-color: rgba(50, 50, 200, 0.8); /* Botón azul translúcido */
+    cursor: pointer; /* Cursor indicativo para áreas clickeables */
+}
+
+#calificacion {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para el texto del resultado */
+    transition: all 0.5s ease-out; /* Transición para mostrar resultados */
+}
+
+#calificacion.show {
+    opacity: 1;
+    transform: scale(1.1); /* Escalado sutil para enfatizar el resultado */
+}

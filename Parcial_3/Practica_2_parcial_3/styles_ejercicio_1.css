@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column; /* Cambio para alinear los elementos verticalmente */
+    justify-content: center;
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 100vh;
+    margin: 0;
+      
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+input {
+    background-color: #ffffff;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#resultado {
+    font-size: 18px;
+    color: #333;
+    text-align: center; /* Asegura que el texto esté centrado */
+    font-weight: bold;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Suaviza la transición */
+    transform: translateY(-20px); /* Comienza ligeramente hacia arriba */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}

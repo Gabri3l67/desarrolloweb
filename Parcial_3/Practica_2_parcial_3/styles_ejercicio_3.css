@@ -1,0 +1,55 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff); /* Fondo con gradiente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+input, button {
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 20px; /* Bordes redondeados para un aspecto más moderno */
+    border: none;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones para efectos interactivos */
+}
+
+input {
+    width: 300px; /* Tamaño fijo para el input */
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #555;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button {
+    background-color: #00C9FF; /* Color de fondo brillante para los botones */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+}
+
+button:hover {
+    transform: translateY(-3px); /* Elevación al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(-1px); /* Pequeña depresión al hacer click */
+}
+
+#concatenado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para los resultados */
+    color: white;
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    word-wrap: break-word; /* Asegura que el texto no desborde */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar el resultado */
+}

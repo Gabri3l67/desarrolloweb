@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); /* Fondo con gradiente colorido */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+input, button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.3); /* Fondo semitransparente para efecto de vidrio */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    cursor: pointer;
+    background-color: #00C9FF; /* Botón azul claro */
+    color: white;
+}
+
+#letraDNI {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Ancho para mejorar la legibilidad */
+    margin-top: 20px;
+}
+
